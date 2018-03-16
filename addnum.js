@@ -9,11 +9,6 @@ const reader = readline.createInterface({
   output: process.stdout
 });
 
-reader.question("What is your name?", function (answer) {
-  console.log(`Hello ${answer}!`);
-});
-
-console.log("Last program line");
 function addNumbers(sum, numsLeft, completionCallback) {
   if (numsLeft > 0) {
     reader.question("Please enter a number: ", function (answer) {

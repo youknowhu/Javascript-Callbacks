@@ -21,6 +21,8 @@ class Game {
 
     if (toStack.length === 0) {
       return true;
+    } else if (fromStack.length === 0) {
+      return false;
     }
     return fromStack[fromStack.length - 1] < toStack[toStack.length - 1];
   }
